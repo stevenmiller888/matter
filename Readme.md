@@ -18,7 +18,7 @@ import { Button } from 'stevenmiller888/matter';
 import element from 'dekujs/virtual-element';
 import { deku, render } from 'dekujs/deku';
 
-let app = deku(<Button/>);
+let app = deku(<Button />);
 render(app, document.body);
 ```
 

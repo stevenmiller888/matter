@@ -8,14 +8,14 @@ DUO_OPTS := --development --use ./support/duo --quiet
 # Default.
 #
 
-default: example node_modules test-style
+default: preview test-style node_modules
 
 #
-# Example.
+# Preview.
 #
 
-example: node_modules
-	@$(DUO) $(DUO_OPTS) index.html index.js index.css
+preview: node_modules
+	@$(DUO) $(DUO_OPTS) preview.html preview.css preview.js
 
 #
 # Deploy.
@@ -44,7 +44,7 @@ node_modules: package.json
 
 clean:
 	@rm -rf build *.log
-	
+
 #
 # Clean dependencies.
 #
@@ -56,4 +56,4 @@ clean-deps:
 # Phonies.
 #
 
-.PHONY: example test-style
+.PHONY: preview deploy test-style
