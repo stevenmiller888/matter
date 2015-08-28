@@ -17,15 +17,15 @@ export default {
   },
   Table: {
     component: <TableExample/>,
-    code: '<Table rows={[\n   [\'Full Name\', \'Age\'],\n   [\'Steven Miller\', \'25\'],\n   [\'Tamara Jordan\', \'23\'], \n   [\'John Smith\', \'28\']]}/>'
+    code: "<Table rows={[\n  ['Full Name', 'Age'],\n  ['Steven Miller', '25'],\n  ['Tamara Jordan', '23'],\n  ['John Smith', '28']\n]} />"
   },
   Menu: {
     component: <MenuExample/>,
-    code: '<Menu items={ items } onChange={ onChange }/>'
+    code: "<Menu onChange={ change } items={ ['Home', 'Profile', 'Messages', 'Notifications'] } />"
   },
   TextField: {
     component: <TextFieldExample/>,
-    code: '<TextField placeholder=\'e.g. Steven Miller\'/>'
+    code: "<TextField placeholder='e.g. Steven Miller'/>"
   },
   Button: {
     component: <ButtonExample/>,
