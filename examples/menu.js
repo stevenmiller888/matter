@@ -2,22 +2,17 @@ import element from 'dekujs/virtual-element';
 import { Menu } from '/lib';
 
 /**
- * Render.
+ * Menu example.
  */
 
-function render({props, state}, setState) {
-  let items = ['Home', 'Profile', 'Messages', 'Notifications'];
+export default {
+  render() {
+    let sections = ['Home', 'Profile', 'Messages', 'Notifications'];
 
-  return (
-    <Menu
-      items={items}
-      onChange={onChange}/>
-  );
+    return <Menu items={ sections } onChange={ change }/>
 
-  // onChange
-  function onChange(data) {
-    // ...
+    function change(item) {
+      // ...
+    }
   }
-}
-
-export default { render };
+};

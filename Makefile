@@ -2,7 +2,7 @@ BIN := ./node_modules/.bin
 ESLINT := $(BIN)/eslint
 DUO := $(BIN)/duo
 
-DUO_OPTS := --development --use ./support/duo
+DUO_OPTS := --development --use ./support/duo --quiet
 
 #
 # Default.

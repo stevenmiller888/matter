@@ -6,7 +6,7 @@ import { Button } from '/lib';
  */
 
 export default {
-  render({props, state}, setState) {
+  render() {
     return (
       <div>
         <div>

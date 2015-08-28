@@ -2,28 +2,24 @@ import element from 'dekujs/virtual-element';
 import { Code } from '/lib';
 
 /**
- * Render.
+ * Code example.
  */
 
-function render({props, state}, setState) {
-  return (
-    <div>
-      <Code language='javascript'>
-{`
-var Git = require('gity');
+export default {
+  render() {
+    return (
+      <div>
+        <Code language='javascript'>
+  {`
+  var Git = require('gity');
 
-var git = Git()
-  .add('*.js')
-  .commit('-m "added js files"')
-  .run();
-`}
-      </Code>
-    </div>
-  );
-}
-
-/**
- * Exports.
- */
-
-export default {render};
+  var git = Git()
+    .add('*.js')
+    .commit('-m "added js files"')
+    .run();
+  `}
+        </Code>
+      </div>
+    );
+  }
+};

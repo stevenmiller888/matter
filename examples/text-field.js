@@ -2,19 +2,11 @@ import element from 'dekujs/virtual-element';
 import { TextField } from '/lib';
 
 /**
- * Render.
+ * TextField example.
  */
 
-function render({props, state}, setState) {
-  return (
-    <div>
-      <TextField placeholder='e.g. Steven Miller'/>
-    </div>
-  );
-}
-
-/**
- * Exports.
- */
-
-export default {render};
+export default {
+  render() {
+    return <TextField placeholder='e.g. Steven Miller'/>;
+  }
+};

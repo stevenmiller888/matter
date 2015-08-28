@@ -1,13 +1,13 @@
 
 # Matter
 
-Matter is a tiny collection of UI components. Feel free to use it to compose your application in a modular, flexible manner. Check out the [website](http://stevenmiller888.github.io/matter/) for live examples.
+Matter is a tiny collection of UI components. The components are built with [Deku](http://github.com/dekujs/deku). Check out the [website](http://stevenmiller888.github.io/matter/) for live examples.
 
 ![](https://cldup.com/xTRE1NuYTv.png)
 
 ## Installation
 
-You can use Browserify or Duo to build the framework, which is available on npm:
+You can use Browserify or Duo to build Matter, which is available on npm:
 
 `npm install matterjs`
 
@@ -35,7 +35,12 @@ render(app, document.body);
 ```js
 <Code language='javascript'>
 {`
-  // ... code snippet
+var Git = require('gity');
+
+var git = Git()
+  .add('*.js')
+  .commit('-m "added js files"')
+  .run();
 `}
 </Code>
 ```
@@ -43,18 +48,22 @@ render(app, document.body);
 ### Menu
 
 ```js
-<Menu onChange={ change } items={['one', 'two', 'three']} />
+let sections = ['Home', 'Profile', 'Messages', 'Notifications'];
+
+<Menu onChange={ change } items={ sections } />
 ```
 
 ### Table
 
 ```js
-<Table rows={[
+let people = [
   ['Full Name', 'Age'], // header row
   ['Steven Miller', '25'],
   ['Tamara Jordan', '23'],
   ['John Smith', '28']
-]} />
+];
+
+<Table rows={ people } />
 ```
 
 ### Text Field
