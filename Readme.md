@@ -71,3 +71,7 @@ let people = [
 ```js
 <TextField placeholder='e.g. Steven Miller' />
 ```
+
+## License
+
+[MIT](https://tldrlegal.com/license/mit-license)
