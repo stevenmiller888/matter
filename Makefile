@@ -2,7 +2,7 @@ BIN := ./node_modules/.bin
 ESLINT := $(BIN)/eslint
 DUO := $(BIN)/duo
 
-DUO_OPTS := --development --use ./support/duo --quiet
+DUO_OPTS := --development --use ./support/duo --quiet --stdout
 
 #
 # Default.
@@ -15,8 +15,11 @@ default: preview test-style node_modules
 #
 
 preview: node_modules
-	@$(DUO) $(DUO_OPTS) preview.html preview.css preview.js
-
+	@mkdir build
+	cp preview.html build/index.html
+	@$(DUO) $(DUO_OPTS) preview.css > build/index.css
+	@$(DUO) $(DUO_OPTS) preview.js > build/index.js
+	
 #
 # Deploy.
 #
