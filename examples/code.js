@@ -8,18 +8,16 @@ import { Code } from '/lib';
 export default {
   render() {
     return (
-      <div>
-        <Code language='javascript'>
-  {`
-  var Git = require('gity');
+      <Code language='javascript'>
+    {`
+    var Git = require('gity');
 
-  var git = Git()
-    .add('*.js')
-    .commit('-m "added js files"')
-    .run();
-  `}
-        </Code>
-      </div>
+    var git = Git()
+      .add('*.js')
+      .commit('-m "added js files"')
+      .run();
+    `}
+      </Code>
     );
   }
 };
