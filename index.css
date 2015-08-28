@@ -1126,7 +1126,6 @@ pre {
 .matter-Code {
   box-shadow: rgba(0, 0, 0, 0.117647) 0px 1px 6px, rgba(0, 0, 0, 0.239216) 0px 1px 4px;
   background: #FFFDFB;
-  border-radius: 4px;
   line-height: 17px;
   overflow: scroll;
   white-space: pre;
@@ -1179,8 +1178,8 @@ body {
 }
 
 body {
-  background: -webkit-radial-gradient(100% 100%, ellipse farthest-side, #F8FFF3 10%, #CEF1EC 50%, #1380A0 120%);
-  background: radial-gradient(ellipse farthest-side at 100% 100%, #F8FFF3 10%, #CEF1EC 50%, #1380A0 120%);
+  background: -webkit-radial-gradient(100% 100%, ellipse farthest-side, #F8FFF3 1%, #CEF1EC 1%, #1380A0 120%);
+  background: radial-gradient(ellipse farthest-side at 100% 100%, #F8FFF3 1%, #CEF1EC 1%, #1380A0 120%);
 }
 
 header {
@@ -1204,18 +1203,6 @@ header div h1 {
   font-weight: 100;
   font-size: 105px;
   text-shadow: 0 2px 0 rgba(0,91,103,.15);
-}
-
-header div h1:after {
-  content: "";
-  position: absolute;
-  width: 84px;
-  height: 2px;
-  left: calc(50% - 42px);
-  bottom: 11px;
-  background: -webkit-linear-gradient(left, rgba(0,113,117,.3), rgba(0,143,135,.45));
-  background: linear-gradient(to right, rgba(0,113,117,.3), rgba(0,143,135,.45));
-  box-shadow: 0 1px 0 rgba(181,243,241,.07);
 }
 
 header div p {
