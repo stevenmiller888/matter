@@ -32,6 +32,7 @@ let App = {
     );
 
     function changeExample(example) {
+      analytics.track('Viewed Example', example);
       updateState({ example: examples[example] });
     }
   }

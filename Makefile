@@ -16,7 +16,7 @@ default: preview test-style node_modules
 
 preview: node_modules
 	@mkdir build
-	cp preview.html build/index.html
+	@cp preview.html build/index.html
 	@$(DUO) $(DUO_OPTS) preview.css > build/index.css
 	@$(DUO) $(DUO_OPTS) preview.js > build/index.js
 	
