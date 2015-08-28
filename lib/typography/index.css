@@ -1,0 +1,29 @@
+
+/**
+ * Typefaces.
+ */
+
+@import './san-francisco-display';
+@import './san-francisco-text';
+
+/**
+ * Fonts.
+ */
+
+:root {
+  --matter-font-modern: 'San Francisco Display', 'Verdana', 'Geneva', sans-serif;
+  --matter-font-classic: 'San Francisco Text', 'Verdana', 'Geneva', sans-serif;
+  --matter-font-small: 11px;
+  --matter-font-medium: 13px;
+  --matter-font-large: 15px;
+}
+
+/**
+ * Weights.
+ */
+
+:root {
+  --matter-weight-light: 300;
+  --matter-weight-normal: 400;
+  --matter-weight-heavy: 500;
+}

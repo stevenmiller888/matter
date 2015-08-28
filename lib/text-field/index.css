@@ -1,0 +1,13 @@
+
+/**
+ * TextField.
+ */
+
+.matter-TextField {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #D3D3D3;
+  padding: 7px 9px 7px 2px;
+  background: transparent;
+  font-size: 15px;
+}

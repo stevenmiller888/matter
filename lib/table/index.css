@@ -1,0 +1,28 @@
+
+/**
+ * Menu.
+ */
+
+.matter-Table {
+  font-size: var(--matter-font-medium);
+  border-collapse: collapse;
+  background-color: #fff;
+  table-layout: auto;
+  color: #000;
+}
+
+.matter-Table-row {
+  vertical-align: middle;
+  line-height: 24px;
+}
+
+.matter-Table-row:first-child {
+  background-color: #FAFAFA;
+  color: #757575;
+}
+
+.matter-Table-cell {
+  padding: 12px 12px 12px 24px;
+  border: 1px solid #eee;
+  line-height: 24px;
+}

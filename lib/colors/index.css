@@ -1,0 +1,137 @@
+
+/**
+ * Core.
+ */
+ 
+:root {
+ --matter-color-water: #47b2fa;
+ --matter-color-earth: #5bdb7b;
+ --matter-color-wind: #2ec2e6;
+ --matter-color-fire: #ff5b3f;
+}
+
+/**
+ * Red.
+ */
+
+:root {
+  --matter-color-red: #F44336;
+  --matter-color-red-light: #EF5350;
+  --matter-color-red-lighter: #E57373;
+  --matter-color-red-lightest: #EF9A9A;
+  --matter-color-red-dark: #E53935;
+  --matter-color-red-darker: #D32F2F;
+  --matter-color-red-darkest: #C62828;
+}
+
+/**
+ * Pink.
+ */
+
+:root {
+  --matter-color-pink: #E91E63;
+  --matter-color-pink-light: #EC407A;
+  --matter-color-pink-lighter: #F06292;
+  --matter-color-pink-lightest: #F48FB1;
+  --matter-color-pink-dark: #D81B60;
+  --matter-color-pink-darker: #C2185B;
+  --matter-color-pink-darkest: #AD1457;
+}
+
+/**
+ * Purple.
+ */
+
+:root {
+  --matter-color-purple: #9C27B0;
+  --matter-color-purple-light: #AB47BC;
+  --matter-color-purple-lighter: #BA68C8;
+  --matter-color-purple-lightest: #CE93D8;
+  --matter-color-purple-dark: #8E24AA;
+  --matter-color-purple-darker: #7B1FA2;
+  --matter-color-purple-darkest: #6A1B9A;
+}
+
+/**
+ * Blue.
+ */
+
+:root {
+  --matter-color-blue: #2196F3;
+  --matter-color-blue-light: #42A5F5;
+  --matter-color-blue-lighter: #64B5F6;
+  --matter-color-blue-lightest: #90CAF9;
+  --matter-color-blue-dark: #1E88E5;
+  --matter-color-blue-darker: #1976D2;
+  --matter-color-blue-darkest: #1565C0;
+}
+
+/**
+ * Green.
+ */
+
+:root {
+  --matter-color-green: #4CAF50;
+  --matter-color-green-light: #66BB6A;
+  --matter-color-green-lighter: #81C784;
+  --matter-color-green-lightest: #A5D6A7;
+  --matter-color-green-dark: #43A047;
+  --matter-color-green-darker: #388E3C;
+  --matter-color-green-darkest: #2E7D32;
+}
+
+/**
+ * Yellow.
+ */
+
+:root {
+  --matter-color-yellow: #FFEB3B;
+  --matter-color-yellow-light: #FFEE58;
+  --matter-color-yellow-lighter: #FFF176;
+  --matter-color-yellow-lightest: #FFF59D;
+  --matter-color-yellow-dark: #FDD835;
+  --matter-color-yellow-darker: #FBC02D;
+  --matter-color-yellow-darkest: #F9A825;
+}
+
+/**
+ * Orange.
+ */
+
+:root {
+ --matter-color-orange: #FF9800;
+ --matter-color-orange-light: #FFA726;
+ --matter-color-orange-lighter: #FFB74D;
+ --matter-color-orange-lightest: #FFCC80;
+ --matter-color-orange-dark: #FB8C00;
+ --matter-color-orange-darker: #F57C00;
+ --matter-color-orange-darkest: #EF6C00;
+}
+
+/**
+ * Brown.
+ */
+
+:root {
+  --matter-color-brown: #795548;
+  --matter-color-brown-light: #8D6E63;
+  --matter-color-brown-lighter: #A1887F;
+  --matter-color-brown-lightest: #BCAAA4;
+  --matter-color-brown-dark: #6D4C41;
+  --matter-color-brown-darker: #5D4037;
+  --matter-color-brown-darkest: #4E342E;
+}
+
+/**
+ * Grey.
+ */
+
+:root {
+  --matter-color-grey: #9E9E9E;
+  --matter-color-grey-light: #BDBDBD;
+  --matter-color-grey-lighter: #E0E0E0;
+  --matter-color-grey-lightest: #EEEEEE;
+  --matter-color-grey-dark: #757575;
+  --matter-color-grey-darker: #616161;
+  --matter-color-grey-darkest: #424242;
+}

@@ -1,0 +1,54 @@
+
+/**
+ * Code.
+ */
+
+.matter-Code {
+  box-shadow: rgba(0, 0, 0, 0.117647) 0px 1px 6px, rgba(0, 0, 0, 0.239216) 0px 1px 4px;
+  background: #FFFDFB;
+  border-radius: 4px;
+  line-height: 17px;
+  overflow: scroll;
+  white-space: pre;
+  font-size: 12px;
+  padding: 20px;
+  color: #000;
+}
+
+.Highlight-at-rule,
+.Highlight-keyword,
+.Highlight-function {
+  color: var(--matter-color-earth);
+}
+
+.Highlight-class {
+  color: var( --matter-color-fire);
+}
+
+.Highlight-constant {
+  color: var(--matter-color-water);
+}
+
+.Highlight-boolean,
+.Highlight-number {
+  color: #6c71c4;
+}
+
+.Highlight-string {
+  color: var(--matter-color-wind);
+}
+
+.Highlight-comment {
+  color: var(--matter-color-brown-lightest);
+  opacity: 0.5;
+}
+
+.Highlight-punctuation,
+.Highlight-operator {
+  color: var(--matter-color-brown-lightest);
+}
+
+.Highlight-attribute,
+.Highlight-name {
+  color: var(--matter-color-grey-darker);
+}

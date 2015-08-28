@@ -1,0 +1,92 @@
+
+@import 'ianstormtaylor/reset';
+@import './lib';
+
+html,body {
+  height: 100%;
+}
+
+body {
+  background: radial-gradient(ellipse farthest-side at 100% 100%, #F8FFF3 10%, #CEF1EC 50%, #1380A0 120%);
+}
+
+header {
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  height: 180px;
+  color: #fff;
+}
+
+header div {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+
+header div h1 {
+  position: relative;
+  line-height: normal;
+  padding-bottom: 7px;
+  font-weight: 100;
+  font-size: 105px;
+  text-shadow: 0 2px 0 rgba(0,91,103,.15);
+}
+
+header div h1:after {
+  content: "";
+  position: absolute;
+  width: 84px;
+  height: 2px;
+  left: calc(50% - 42px);
+  bottom: 11px;
+  background: linear-gradient(to right, rgba(0,113,117,.3), rgba(0,143,135,.45));
+  box-shadow: 0 1px 0 rgba(181,243,241,.07);
+}
+
+header div p {
+  width: 380px;
+  margin: .7em auto 1.35em;
+  font-size: 20px;
+  line-height: 1.3;
+  text-shadow: 0 1px 0 rgba(0,91,103,.3);
+}
+
+.App {
+  box-sizing: border-box;
+  margin: 30px auto;
+  display: flex;
+  padding: 10px;
+  width: 60%;
+}
+
+.App-menu {
+  order: 1;
+}
+
+.App-example {
+  box-shadow: color(black alpha(0.117647)) 0px 1px 6px, color(black alpha(0.239216)) 0px 1px 4px;
+  margin-left: 30px;
+  order: 2;
+  flex-direction: column;
+  position: relative;
+  display: flex;
+  flex: 1;
+  width: 363.203px;
+  height: 524px;
+}
+
+.App-example-component {
+  justify-content: center;
+  background: #FFF;
+  order: 1;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.App-example-code {
+  order: 2;
+  width: 100%;
+}

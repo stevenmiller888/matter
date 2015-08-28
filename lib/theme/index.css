@@ -1,0 +1,9 @@
+
+/**
+ * Theme.
+ */
+
+:root {
+  font-family: var(--matter-font-classic);
+  -webkit-font-smoothing: antialiased;
+}

@@ -1,0 +1,51 @@
+
+/**
+ * Checkbox.
+ */
+
+.matter-Checkbox {
+  background: white no-repeat center;
+  -webkit-appearance: none;
+  border: 1px solid #7a807b;
+  vertical-align: middle;
+  border-radius: 2px;
+  margin-right: 4px;
+  appearance: none;
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+}
+
+.matter-Checkbox:hover {
+  border-color: #5bdb7b;
+}
+
+.matter-Checkbox:checked {
+  background-image: url(../lib/checkbox/checkbox.svg);
+  background-color: #5bdb7b;
+  background-size: cover;
+  border-color: #5bdb7b;
+}
+
+.matter-Checkbox:focus {
+  outline: 0;
+}
+
+/**
+ * Sizes
+ */
+
+.matter-Checkbox[size="small"] {
+  height: 20px;
+  width: 20px;
+}
+
+.matter-Checkbox[size="medium"] {
+  height: 50px;
+  width: 50px;
+}
+
+.matter-Checkbox[size="large"] {
+  height: 75px;
+  width: 75px;
+}

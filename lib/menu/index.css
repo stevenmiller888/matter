@@ -1,0 +1,34 @@
+
+/**
+ * Menu.
+ */
+
+.matter-Menu {
+  box-shadow: color(black alpha(0.117647)) 0px 1px 6px, color(black alpha(0.239216)) 0px 1px 4px;
+  min-width: min-content;
+  flex-direction: column;
+  display: flex;
+  background: #FFF;
+}
+
+.matter-Menu-item {
+  padding: 0px 50px 0px 25px;
+  margin-bottom: 7px;
+  line-height: 40px;
+  text-align: left;
+  font-size: 14px;
+  color: #000;
+}
+
+.matter-Menu-item:hover {
+  background: rgba(0, 0, 0, 0.0313726);
+  cursor: pointer;
+}
+
+.matter-Menu-item[active] {
+  background: rgba(0, 0, 0, 0.0313726);
+}
+
+.matter-Menu-item:first-child {
+  margin-top: 7px;
+}
