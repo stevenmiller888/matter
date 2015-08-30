@@ -15,7 +15,7 @@ You can also use Duo to require Matter straight from Github:
 
 `import Matter from 'stevenmiller888/matter';`
 
-Or you can download the [files](https://github.com/stevenmiller888/matter/dist).
+Or you can download the [files](https://github.com/stevenmiller888/matter/tree/master/dist) directly.
 
 ## Usage
 
