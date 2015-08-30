@@ -19,8 +19,5 @@
     "eslint": "^1.2.1",
     "gh-pages": "^0.3.1"
   },
-  "dependencies": {
-    "highlight.js": "^8.6.0"
-  },
   "license": "MIT"
 }
