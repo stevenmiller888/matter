@@ -15,11 +15,19 @@ default: preview test-style node_modules
 #
 
 preview: node_modules
-	@mkdir build
+	@mkdir -p build
 	@cp preview.html build/index.html
 	@$(DUO) $(DUO_OPTS) preview.css > build/index.css
 	@$(DUO) $(DUO_OPTS) preview.js > build/index.js
-	
+
+#
+#	Dist.
+#
+
+dist: node_modules
+	@$(DUO) $(DUO_OPTS) --standalone matter index.js > dist/matter.js
+	@$(DUO) $(DUO_OPTS) index.css > dist/matter.css
+
 #
 # Deploy.
 #
@@ -46,7 +54,7 @@ node_modules: package.json
 #
 
 clean:
-	@rm -rf build *.log
+	@rm -rf build dist *.log
 
 #
 # Clean dependencies.
@@ -59,4 +67,4 @@ clean-deps:
 # Phonies.
 #
 
-.PHONY: preview deploy test-style
+.PHONY: preview deploy dist test-style

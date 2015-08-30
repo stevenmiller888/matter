@@ -7,9 +7,15 @@ Matter is a tiny collection of UI components. The components are built with [Dek
 
 ## Installation
 
-You can use Browserify or Duo to build Matter, which is available on npm:
+Matter is available on npm:
 
 `npm install matterjs`
+
+You can also use Duo to require Matter straight from Github:
+
+`import Matter from 'stevenmiller888/matter';`
+
+Or you can download the [files](https://github.com/stevenmiller888/matter/dist).
 
 ## Usage
 
