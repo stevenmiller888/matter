@@ -78,6 +78,21 @@ let people = [
 <TextField placeholder='e.g. Steven Miller' />
 ```
 
+### Shape
+
+```js
+<Shape kind="circle" color="water" size="small"/>
+```
+
+### Grid
+
+```js
+<Grid>
+  // ... children
+</Grid>
+```
+
+
 ## License
 
 [MIT](https://tldrlegal.com/license/mit-license)

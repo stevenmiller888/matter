@@ -1,0 +1,221 @@
+
+
+/**
+ * Shape.
+ */
+
+.matter-Shape {
+  box-sizing: border-box;
+}
+
+/**
+ * Space.
+ */
+
+.matter-Shape[space="small"] {
+  margin: 13px;
+}
+
+.matter-Shape[space="medium"] {
+  margin: 23px;
+}
+
+.matter-Shape[space="large"] {
+  margin: 33px;
+}
+
+/**
+ * Kinds/sizes.
+ */
+
+.matter-Shape[kind="square"][color="earth"] {
+  background-color: var(--matter-color-earth);
+}
+
+.matter-Shape[kind="square"][color="water"] {
+  background-color: var(--matter-color-water);
+}
+
+.matter-Shape[kind="square"][color="wind"] {
+  background-color: var(--matter-color-wind);
+}
+
+.matter-Shape[kind="square"][color="fire"] {
+  background-color: var(--matter-color-fire);
+}
+
+.matter-Shape[kind="square"][size="small"] {
+  height: 6.25vw;
+  width: 6.25vw;
+}
+
+.matter-Shape[kind="square"][size="medium"] {
+  height: 12.5vw;
+  width: 12.5vw;
+}
+
+.matter-Shape[kind="square"][size="large"] {
+  height: 25vw;
+  width: 25vw;
+}
+
+.matter-Shape[kind="rectangle"][color="earth"] {
+  background-color: var(--matter-color-earth);
+}
+
+.matter-Shape[kind="rectangle"][color="water"] {
+  background-color: var(--matter-color-water);
+}
+
+.matter-Shape[kind="rectangle"][color="wind"] {
+  background-color: var(--matter-color-wind);
+}
+
+.matter-Shape[kind="rectangle"][color="fire"] {
+  background-color: var(--matter-color-fire);
+}
+
+.matter-Shape[kind="rectangle"][size="small"] {
+  height: 6.25vw;
+  width: 10.5vw;
+}
+
+.matter-Shape[kind="rectangle"][size="medium"] {
+  height: 12.5vw;
+  width: 25vw;
+}
+
+.matter-Shape[kind="rectangle"][size="large"] {
+  height: 25vw;
+  width: 50vw;
+}
+
+.matter-Shape[kind="circle"][color="earth"] {
+  background-color: var(--matter-color-earth);
+}
+
+.matter-Shape[kind="circle"][color="water"] {
+  background-color: var(--matter-color-water);
+}
+
+.matter-Shape[kind="circle"][color="wind"] {
+  background-color: var(--matter-color-wind);
+}
+
+.matter-Shape[kind="circle"][color="fire"] {
+  background-color: var(--matter-color-fire);
+}
+
+.matter-Shape[kind="circle"][size="small"] {
+  height: 6.25vw;
+  width: 6.25vw;
+  border-radius: 3.125vw;
+}
+
+.matter-Shape[kind="circle"][size="medium"] {
+  height: 12.5vw;
+  width: 12.5vw;
+  border-radius: 25vw;
+}
+
+.matter-Shape[kind="circle"][size="large"] {
+  height: 25vw;
+  width: 25vw;
+  border-radius: 50vw;
+}
+
+.matter-Shape[kind="triangle"][size="small"][color="earth"] {
+  width: 0;
+  height: 0;
+  border-left: 4.25vw solid transparent;
+  border-right: 4.25vw solid transparent;
+  border-bottom: 6.25vw solid var(--matter-color-earth);
+}
+
+.matter-Shape[kind="triangle"][size="medium"][color="earth"] {
+  width: 0;
+  height: 0;
+  border-left: 8.5vw solid transparent;
+  border-right: 8.5vw solid transparent;
+  border-bottom: 12.495vw solid var(--matter-color-earth);
+}
+
+.matter-Shape[kind="triangle"][size="large"][color="earth"] {
+  width: 0;
+  height: 0;
+  border-left: 17vw solid transparent;
+  border-right: 17vw solid transparent;
+  border-bottom: 24.99vw solid var(--matter-color-earth);
+}
+
+.matter-Shape[kind="triangle"][size="small"][color="water"] {
+  width: 0;
+  height: 0;
+  border-left: 4.25vw solid transparent;
+  border-right: 4.25vw solid transparent;
+  border-bottom: 6.25vw solid var(--matter-color-water);
+}
+
+.matter-Shape[kind="triangle"][size="medium"][color="water"] {
+  width: 0;
+  height: 0;
+  border-left: 8.5vw solid transparent;
+  border-right: 8.5vw solid transparent;
+  border-bottom: 12.495vw solid var(--matter-color-water);
+}
+
+.matter-Shape[kind="triangle"][size="large"][color="water"] {
+  width: 0;
+  height: 0;
+  border-left: 17vw solid transparent;
+  border-right: 17vw solid transparent;
+  border-bottom: 24.99vw solid var(--matter-color-water);
+}
+
+.matter-Shape[kind="triangle"][size="small"][color="fire"] {
+  width: 0;
+  height: 0;
+  border-left: 4.25vw solid transparent;
+  border-right: 4.25vw solid transparent;
+  border-bottom: 6.25vw solid var(--matter-color-fire);
+}
+
+.matter-Shape[kind="triangle"][size="medium"][color="fire"] {
+  width: 0;
+  height: 0;
+  border-left: 8.5vw solid transparent;
+  border-right: 8.5vw solid transparent;
+  border-bottom: 12.495vw solid var(--matter-color-fire);
+}
+
+.matter-Shape[kind="triangle"][size="large"][color="fire"] {
+  width: 0;
+  height: 0;
+  border-left: 17vw solid transparent;
+  border-right: 17vw solid transparent;
+  border-bottom: 24.99vw solid var(--matter-color-fire);
+}
+
+.matter-Shape[kind="triangle"][size="small"][color="wind"] {
+  width: 0;
+  height: 0;
+  border-left: 4.25vw solid transparent;
+  border-right: 4.25vw solid transparent;
+  border-bottom: 6.25vw solid var(--matter-color-wind);
+}
+
+.matter-Shape[kind="triangle"][size="medium"][color="wind"] {
+  width: 0;
+  height: 0;
+  border-left: 8.5vw solid transparent;
+  border-right: 8.5vw solid transparent;
+  border-bottom: 12.495vw solid var(--matter-color-wind);
+}
+
+.matter-Shape[kind="triangle"][size="large"][color="wind"] {
+  width: 0;
+  height: 0;
+  border-left: 17vw solid transparent;
+  border-right: 17vw solid transparent;
+  border-bottom: 24.99vw solid var(--matter-color-wind);
+}

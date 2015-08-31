@@ -2,6 +2,7 @@ import element from 'dekujs/virtual-element';
 import TextFieldExample from './text-field';
 import ButtonExample from './button';
 import TableExample from './table';
+import ShapeExample from './shape';
 import CodeExample from './code';
 import MenuExample from './menu';
 
@@ -29,5 +30,9 @@ export default {
   Button: {
     component: <ButtonExample/>,
     code: "<Button label='Large' size='large' type='primary'/>\n<Button label='Medium' size='medium' type='primary'/>\n<Button label='Small' size='small' type='primary'/>\n\n<Button label='Primary' size='medium' type='primary'/>\n<Button label='Secondary' size='medium' type='secondary'/>\n<Button label='Danger' size='medium' type='danger'/>"
-  }
+  },
+  Shape: {
+    component: <ShapeExample/>,
+    code: '<Shape kind="square" size="small" color="wind"/>\n<Shape kind="circle" size="small" color="earth"/>\n<Shape kind="triangle" size="small" color="water"/>\n<Shape kind="rectangle" size="small" color="fire"/>'
+  },
 };

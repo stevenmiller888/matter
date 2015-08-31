@@ -1,4 +1,8 @@
 
+0.0.6 / August 31st, 2015
+
+  * Added generic shape component
+
 0.0.5 / August 27th, 2015
 
   * Style updates

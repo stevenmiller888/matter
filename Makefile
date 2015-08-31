@@ -54,7 +54,7 @@ node_modules: package.json
 #
 
 clean:
-	@rm -rf build dist *.log
+	@rm -rf build *.log
 
 #
 # Clean dependencies.

@@ -3,7 +3,9 @@
 @import './checkbox';
 @import './colors';
 @import './button';
+@import './shape';
 @import './table';
 @import './theme';
+@import './grid';
 @import './menu';
 @import './code';
