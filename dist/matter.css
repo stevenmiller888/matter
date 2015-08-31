@@ -617,24 +617,6 @@
   border-radius: 50vw;
 }
 
-.matter-Shape[kind="oval"][size="small"] {
-  width: 6.25vw;
-  height: 3.125vw;
-  border-radius: 3.125vw / 1.5625vw;
-}
-
-.matter-Shape[kind="oval"][size="medium"] {
-  width: 25vw;
-  height: 12.5vw;
-  border-radius: 12.5vw / 6.25vw;
-}
-
-.matter-Shape[kind="oval"][size="large"] {
-  width: 50vw;
-  height: 25vw;
-  border-radius: 25vw / 12.5vw;
-}
-
 .matter-Shape[kind="triangle"][size="small"][color="earth"] {
   width: 0;
   height: 0;
@@ -646,17 +628,17 @@
 .matter-Shape[kind="triangle"][size="medium"][color="earth"] {
   width: 0;
   height: 0;
-  border-left: 6.25vw solid transparent;
-  border-right: 6.25vw solid transparent;
-  border-bottom: 6.25vw solid #5bdb7b;
+  border-left: 8.5vw solid transparent;
+  border-right: 8.5vw solid transparent;
+  border-bottom: 12.495vw solid #5bdb7b;
 }
 
 .matter-Shape[kind="triangle"][size="large"][color="earth"] {
   width: 0;
   height: 0;
-  border-left: 6.25vw solid transparent;
-  border-right: 6.25vw solid transparent;
-  border-bottom: 6.25vw solid #5bdb7b;
+  border-left: 17vw solid transparent;
+  border-right: 17vw solid transparent;
+  border-bottom: 24.99vw solid #5bdb7b;
 }
 
 .matter-Shape[kind="triangle"][size="small"][color="water"] {
@@ -670,17 +652,17 @@
 .matter-Shape[kind="triangle"][size="medium"][color="water"] {
   width: 0;
   height: 0;
-  border-left: 6.25vw solid transparent;
-  border-right: 6.25vw solid transparent;
-  border-bottom: 6.25vw solid #47b2fa;
+  border-left: 8.5vw solid transparent;
+  border-right: 8.5vw solid transparent;
+  border-bottom: 12.495vw solid #47b2fa;
 }
 
 .matter-Shape[kind="triangle"][size="large"][color="water"] {
   width: 0;
   height: 0;
-  border-left: 6.25vw solid transparent;
-  border-right: 6.25vw solid transparent;
-  border-bottom: 6.25vw solid #47b2fa;
+  border-left: 17vw solid transparent;
+  border-right: 17vw solid transparent;
+  border-bottom: 24.99vw solid #47b2fa;
 }
 
 .matter-Shape[kind="triangle"][size="small"][color="fire"] {
@@ -694,17 +676,17 @@
 .matter-Shape[kind="triangle"][size="medium"][color="fire"] {
   width: 0;
   height: 0;
-  border-left: 6.25vw solid transparent;
-  border-right: 6.25vw solid transparent;
-  border-bottom: 6.25vw solid #ff5b3f;
+  border-left: 8.5vw solid transparent;
+  border-right: 8.5vw solid transparent;
+  border-bottom: 12.495vw solid #ff5b3f;
 }
 
 .matter-Shape[kind="triangle"][size="large"][color="fire"] {
   width: 0;
   height: 0;
-  border-left: 6.25vw solid transparent;
-  border-right: 6.25vw solid transparent;
-  border-bottom: 6.25vw solid #ff5b3f;
+  border-left: 17vw solid transparent;
+  border-right: 17vw solid transparent;
+  border-bottom: 24.99vw solid #ff5b3f;
 }
 
 .matter-Shape[kind="triangle"][size="small"][color="wind"] {
@@ -718,17 +700,17 @@
 .matter-Shape[kind="triangle"][size="medium"][color="wind"] {
   width: 0;
   height: 0;
-  border-left: 6.25vw solid transparent;
-  border-right: 6.25vw solid transparent;
-  border-bottom: 6.25vw solid #2ec2e6;
+  border-left: 8.5vw solid transparent;
+  border-right: 8.5vw solid transparent;
+  border-bottom: 12.495vw solid #2ec2e6;
 }
 
 .matter-Shape[kind="triangle"][size="large"][color="wind"] {
   width: 0;
   height: 0;
-  border-left: 6.25vw solid transparent;
-  border-right: 6.25vw solid transparent;
-  border-bottom: 6.25vw solid #2ec2e6;
+  border-left: 17vw solid transparent;
+  border-right: 17vw solid transparent;
+  border-bottom: 24.99vw solid #2ec2e6;
 }
 
 /**
