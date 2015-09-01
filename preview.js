@@ -2,6 +2,7 @@ import element from 'dekujs/virtual-element';
 import { deku, render } from 'dekujs/deku';
 import { Menu, Code } from './lib';
 import examples from './examples' ;
+import store from 'yields/store';
 
 /**
  * App.
@@ -10,13 +11,14 @@ import examples from './examples' ;
 let App = {
   render({ props, state }, updateState) {
     let { examples } = props;
-    let example = state.example || examples.Code;
+    let defaultActive = store('current');
+    let example = state.example || examples[defaultActive] || examples.Code;
     let items = Object.keys(examples);
 
     return (
       <div class='App'>
         <div class='App-menu'>
-          <Menu items={ items } onChange={ changeExample }/>
+          <Menu items={ items } onChange={ changeExample } defaultActive={ defaultActive }/>
         </div>
         <div class='App-example'>
           <div class='App-example-component'>
@@ -31,9 +33,10 @@ let App = {
       </div>
     );
 
-    function changeExample(example) {
-      analytics.track('Viewed Example', example);
-      updateState({ example: examples[example] });
+    function changeExample(expl) {
+      analytics.track('Viewed Example', expl);
+      store('current', expl);
+      updateState({ example: examples[expl] });
     }
   }
 };
