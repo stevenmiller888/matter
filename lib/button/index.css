@@ -9,7 +9,6 @@
   display: inline-block;
   transition: all 200ms;
   text-decoration: none;
-  overflow: 'hidden';
   border-radius: 3px;
   line-height: 16px;
   color: white;
