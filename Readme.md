@@ -1,7 +1,7 @@
 
 # Matter
 
-Matter is a tiny collection of UI components. The components are built with [Deku](http://github.com/dekujs/deku). Check out the [website](http://stevenmiller888.github.io/matter/) for live examples.
+Matter is a tiny collection of UI components. The components are built with [Deku](http://github.com/dekujs/deku). Check out the [website](http://stevenmiller888.github.io/matter/) for live examples. A React version is available [here](https://github.com/stevenmiller888/matter-react).
 
 ![](https://cldup.com/xTRE1NuYTv.png)
 
