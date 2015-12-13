@@ -1,8 +1,7 @@
 BIN := ./node_modules/.bin
+BROWSERIFY := $(BIN)/browserify
 ESLINT := $(BIN)/eslint
 DUO := $(BIN)/duo
-
-DUO_OPTS := --development --quiet --stdout --use ./support/duo
 
 #
 # Default.
@@ -32,7 +31,7 @@ preview: node_modules
 #
 
 dist: node_modules
-	@$(DUO) $(DUO_OPTS) --standalone matter index.js > dist/matter.js
+	@$(BROWSERIFY) index.js -t [ babelify --presets [ es2015 react ] ] > dist/matter.js
 	@$(DUO) $(DUO_OPTS) index.css > dist/matter.css
 
 #

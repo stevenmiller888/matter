@@ -1,8 +1,7 @@
-import element from 'dekujs/virtual-element';
-import { deku, render } from 'dekujs/deku';
+import element from 'virtual-element';
+import { deku, render } from 'deku';
 import { Menu, Code } from './lib';
 import examples from './examples' ;
-import store from 'yields/store';
 
 /**
  * App.
@@ -11,14 +10,13 @@ import store from 'yields/store';
 let App = {
   render({ props, state }, updateState) {
     let { examples } = props;
-    let defaultActive = store('current');
-    let example = state.example || examples[defaultActive] || examples.Code;
+    let example = state.example || examples.Code;
     let items = Object.keys(examples);
 
     return (
       <div class='App'>
         <div class='App-menu'>
-          <Menu items={ items } onChange={ changeExample } defaultActive={ defaultActive }/>
+          <Menu items={ items } onChange={ changeExample } defaultActive={ Object.keys(examples)[0] }/>
         </div>
         <div class='App-example'>
           <div class='App-example-component'>
@@ -35,7 +33,6 @@ let App = {
 
     function changeExample(expl) {
       analytics.track('Viewed Example', expl);
-      store('current', expl);
       updateState({ example: examples[expl] });
     }
   }

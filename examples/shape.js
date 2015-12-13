@@ -1,4 +1,4 @@
-import element from 'dekujs/virtual-element';
+import element from 'virtual-element';
 import { Grid, Shape } from '/lib';
 
 /**
