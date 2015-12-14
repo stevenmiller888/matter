@@ -11,18 +11,14 @@ Matter is available on npm:
 
 `npm install matterjs`
 
-You can also use Duo to require Matter straight from Github:
-
-`import Matter from 'stevenmiller888/matter';`
-
 Or you can download the [files](https://github.com/stevenmiller888/matter/tree/master/dist) directly.
 
 ## Usage
 
 ```js
-import { Button } from 'stevenmiller888/matter';
+import { Button } from 'matter';
 import element from 'virtual-element';
-import { deku, render } from 'dekujs/deku';
+import { deku, render } from 'deku';
 
 let app = deku(<Button />);
 render(app, document.body);

@@ -1,4 +1,8 @@
 
+0.1.0 / December 14th, 2015
+
+  * Switched to browserify
+
 0.0.6 / August 31st, 2015
 
   * Added generic shape component
