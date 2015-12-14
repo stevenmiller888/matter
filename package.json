@@ -24,6 +24,7 @@
     "babelify": "^7.2.0",
     "browserify": "^12.0.1",
     "co-fs": "^1.2.0",
+    "deku-testutils": "^1.0.2",
     "duo": "^0.15.3",
     "duo-babel": "^6.0.0",
     "duo-myth": "^0.2.0",
