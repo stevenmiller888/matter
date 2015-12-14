@@ -43,5 +43,10 @@
     "highlight-yaml": "0.0.1",
     "syntax-highlighter": "0.0.3",
     "virtual-element": "^1.2.0"
+  },
+  "browserify": {
+    "transform": [
+      "babelify"
+    ]
   }
 }
