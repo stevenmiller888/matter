@@ -1,4 +1,4 @@
-import element from 'dekujs/virtual-element';
+import element from 'virtual-element';
 import TextFieldExample from './text-field';
 import ButtonExample from './button';
 import TableExample from './table';

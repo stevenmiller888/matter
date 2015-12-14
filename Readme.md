@@ -21,7 +21,7 @@ Or you can download the [files](https://github.com/stevenmiller888/matter/tree/m
 
 ```js
 import { Button } from 'stevenmiller888/matter';
-import element from 'dekujs/virtual-element';
+import element from 'virtual-element';
 import { deku, render } from 'dekujs/deku';
 
 let app = deku(<Button />);
