@@ -1,4 +1,12 @@
 
+0.1.2 / December 14th, 2015
+
+  * Added tests
+
+0.1.1 / December 14th, 2015
+
+  * Updated eslint rules
+
 0.1.0 / December 14th, 2015
 
   * Switched to browserify

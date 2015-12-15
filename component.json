@@ -1,6 +1,6 @@
 {
   "name": "stevenmiller888/matter",
-  "version": "0.0.6",
+  "version": "0.1.2",
   "main": "index.js",
   "dependencies": {
     "forbeslindesay/ascii-math": "^2.0.0",
