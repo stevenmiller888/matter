@@ -9,10 +9,11 @@ import { Checkbox }  from '../';
 describe('Checkbox', () => {
   const mock = Mock(Checkbox);
 
-  it('should return a checkbox element', () => {
+  it('returns a checkbox with the right classes', () => {
     const node = mock.render();
     assertElement.isNode(node, 'input');
     assertElement.hasAttribute(node, 'type', 'checkbox');
+    assertElement.hasClass(node, 'matter-Checkbox');
   });
 
   describe('with props', () => {

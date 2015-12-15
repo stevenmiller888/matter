@@ -9,9 +9,10 @@ import { Button }  from '../';
 describe('Button', () => {
   const mock = Mock(Button);
 
-  it('should return a button element', () => {
+  it('returns a button with the right classes', () => {
     const node = mock.render();
     assertElement.isNode(node, 'button');
+    assertElement.hasClass(node, 'matter-Button');
   });
 
   describe('with props', () => {
