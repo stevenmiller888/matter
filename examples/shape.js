@@ -1,5 +1,5 @@
 import element from 'virtual-element';
-import { Grid, Shape } from '/lib';
+import { Grid, Shape } from '../lib';
 
 /**
  * Shape example.

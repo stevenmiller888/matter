@@ -1,5 +1,5 @@
 import element from 'virtual-element';
-import { Table } from '/lib';
+import { Table } from '../lib';
 
 /**
  * Table example.
@@ -14,6 +14,6 @@ export default {
       ['John Smith', '28']
     ];
 
-    return <Table rows={ people }/>
+    return <Table rows={ people }/>;
   }
 };

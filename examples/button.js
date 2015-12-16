@@ -1,5 +1,5 @@
 import element from 'virtual-element';
-import { Button } from '/lib';
+import { Button } from '../lib';
 
 /**
  * Button example.
