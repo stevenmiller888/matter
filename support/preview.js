@@ -13,14 +13,14 @@ var index = path.resolve(__dirname, '../preview.html');
 var css = path.resolve(__dirname, '../preview.css');
 
 function buildCSS(req, res, next) {
-  if (url.parse(req.url).pathname !== '/build/preview.css') return next();
+  if (url.parse(req.url).pathname !== '/preview.css') return next();
   postcss([
     postcssImport,
     postcssUrl({ url: 'copy' }),
     postcssNext,
     autoprefixer
   ])
-    .process(fs.readFileSync(css), { from: 'preview.css', to: 'build/preview.css' })
+    .process(fs.readFileSync(css), { from: 'preview.css', to: 'preview.css' })
     .catch(function(error) {
       if (error.name === 'CssSyntaxError') {
         process.stderr.write(error.message + error.showSourceCode());
@@ -29,8 +29,9 @@ function buildCSS(req, res, next) {
       }
     })
     .then(function(result) {
-      fs.writeFileSync('build/preview.css', result.css);
-      if (result.map) fs.writeFileSync('build/preview.css.map', result.map);
+      res.setHeader('Content-Type', 'text/css');
+      res.write(result.css);
+      res.end();
       return next();
     });
 }

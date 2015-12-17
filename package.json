@@ -7,12 +7,6 @@
   },
   "style": "index.css",
   "scripts": {
-    "clean": "rm -rf build *.log",
-    "clean-deps": "rm -rf node_modules",
-    "deploy": "browserify index.js -t [babelify] > build/index.js && node support/deploy.js",
-    "dist": "npm run dist-js && npm run dist-css",
-    "dist-css": "postcss -u postcss-import -u postcss-url --postcss-url.url \"copy\" -u postcss-cssnext -u autoprefixer -o dist/matter.css ./index.css",
-    "dist-js": "browserify index.js -t [babelify] > dist/matter.js",
     "lint": "eslint src",
     "pretest": "npm run lint",
     "preview": "node support/preview.js",
