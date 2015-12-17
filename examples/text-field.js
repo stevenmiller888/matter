@@ -1,5 +1,5 @@
 import element from 'virtual-element';
-import { TextField } from '/lib';
+import { TextField } from '../lib';
 
 /**
  * TextField example.

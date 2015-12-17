@@ -21,7 +21,7 @@
 }
 
 .matter-Checkbox:checked {
-  background-image: url(../lib/checkbox/checkbox.svg);
+  background-image: url(./checkbox.svg);
   background-color: #5bdb7b;
   background-size: cover;
   border-color: #5bdb7b;

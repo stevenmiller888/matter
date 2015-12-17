@@ -1,34 +1,50 @@
-var plugins = require('./duo');
-var send = require('koa-send');
+var fs = require('fs');
+var url = require('url');
 var path = require('path');
-var fs = require("co-fs");
-var koa = require('koa');
-var Duo = require('Duo');
-var app = koa();
+var budo = require('budo');
+var babelify = require('babelify');
+var postcss = require('postcss');
+var postcssUrl = require('postcss-url');
+var postcssImport = require('postcss-import');
+var postcssNext = require('postcss-cssnext');
+var autoprefixer = require('autoprefixer');
 
-var root = path.resolve(__dirname, '..');
+var index = path.resolve(__dirname, '../preview.html');
+var css = path.resolve(__dirname, '../preview.css');
 
-app.use(function*(next) {
-  var entry = this.path.slice(1);
-  var ext = path.extname(entry).slice(1);
+function buildCSS(req, res, next) {
+  if (url.parse(req.url).pathname !== '/preview.css') return next();
+  postcss([
+    postcssImport,
+    postcssUrl({ url: 'copy' }),
+    postcssNext,
+    autoprefixer
+  ])
+    .process(fs.readFileSync(css), { from: 'preview.css', to: 'preview.css' })
+    .catch(function(error) {
+      if (error.name === 'CssSyntaxError') {
+        process.stderr.write(error.message + error.showSourceCode());
+      } else {
+        throw error;
+      }
+    })
+    .then(function(result) {
+      res.setHeader('Content-Type', 'text/css');
+      res.write(result.css);
+      res.end();
+      return next();
+    });
+}
 
-  var duo = new Duo(root)
-    .sourceMap('inline')
-    .use(plugins)
-    .entry(entry);
-
-  if (ext === 'js' || ext === 'css') {
-    var src = yield duo.run();
-    this.type = ext;
-    this.body = src.code;
-  } else {
-    if (!entry) {
-      this.type = 'html';
-      this.body = yield fs.readFile('preview.html', "utf8");
-    } else {
-      yield send(this, entry, { root: root });
-    }
+var app = budo('preview.js', {
+  port: 3000,
+  middleware: buildCSS,
+  defaultIndex: function() {
+    return fs.createReadStream(index, 'utf8');
+  },
+  browserify: {
+    transform: babelify
   }
+}).on('connect', () => {
+  console.log('preview server listening on port 3000');
 });
-
-app.listen(3000);

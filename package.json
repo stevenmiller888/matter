@@ -5,11 +5,13 @@
     "type": "git",
     "url": "https://github.com/stevenmiller888/matter.git"
   },
+  "style": "index.css",
   "scripts": {
     "lint": "eslint src",
     "pretest": "npm run lint",
-    "test": "zuul -- test/*.js",
-    "start": "zuul --local 7000 -- test/*.js"
+    "preview": "node support/preview.js",
+    "test-local": "zuul --local 7000 -- test/*.js",
+    "test": "zuul -- test/*.js"
   },
   "keywords": [
     "matter",
@@ -19,20 +21,24 @@
     "ui"
   ],
   "devDependencies": {
+    "autoprefixer": "^6.1.2",
+    "babel-plugin-transform-react-jsx": "^6.3.13",
     "babel-preset-es2015": "^6.3.13",
     "babel-preset-react": "^6.3.13",
     "babelify": "^7.2.0",
     "browserify": "^12.0.1",
-    "co-fs": "^1.2.0",
+    "budo": "^7.0.2",
     "compat-trigger-event": "^1.0.0",
     "deku-testutils": "^1.0.2",
-    "duo": "^0.15.3",
-    "duo-babel": "^6.0.0",
-    "duo-myth": "^0.2.0",
     "eslint": "^1.2.1",
     "gh-pages": "^0.3.1",
-    "koa": "^1.0.0",
-    "koa-send": "^1.3.1",
+    "postcss": "^5.0.12",
+    "postcss-cli": "^2.3.2",
+    "postcss-cssnext": "^2.2.0",
+    "postcss-import": "^7.1.3",
+    "postcss-middleware": "^1.0.0",
+    "postcss-url": "^5.0.2",
+    "suitcss-base": "^1.0.1",
     "zuul": "^3.8.0"
   },
   "license": "MIT",

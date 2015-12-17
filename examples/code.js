@@ -1,5 +1,5 @@
 import element from 'virtual-element';
-import { Code } from '/lib';
+import { Code } from '../lib';
 
 /**
  * Code example.

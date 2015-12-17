@@ -1,5 +1,4 @@
-
-@import 'ianstormtaylor/reset';
+@import 'suitcss-base';
 @import './lib';
 
 html,body {

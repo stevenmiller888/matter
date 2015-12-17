@@ -1,7 +1,7 @@
 BIN := ./node_modules/.bin
 BROWSERIFY := $(BIN)/browserify
+POSTCSS := $(BIN)/postcss
 ESLINT := $(BIN)/eslint
-DUO := $(BIN)/duo
 
 #
 # Default.
@@ -16,8 +16,8 @@ default: build test-style node_modules
 build: node_modules
 	@mkdir -p build
 	@cp preview.html build/index.html
-	@$(DUO) $(DUO_OPTS) preview.css > build/preview.css
-	@$(DUO) $(DUO_OPTS) preview.js > build/preview.js
+	@$(BROWSERIFY) index.js -t [babelify] > build/preview.js
+	@$(POSTCSS) -u postcss-import -u postcss-url --postcss-url.url "copy" -u postcss-cssnext -u autoprefixer -o build/preview.css ./preview.css
 
 #
 # Preview.
@@ -31,14 +31,15 @@ preview: node_modules
 #
 
 dist: node_modules
+	@mkdir -p dist
 	@$(BROWSERIFY) index.js -t [ babelify --presets [ es2015 react ] ] > dist/matter.js
-	@$(DUO) $(DUO_OPTS) index.css > dist/matter.css
+	@$(POSTCSS) -u postcss-import -u postcss-url --postcss-url.url "copy" -u postcss-cssnext -u autoprefixer -o dist/matter.css ./index.css
 
 #
 # Deploy.
 #
 
-deploy: node_modules
+deploy: node_modules build
 	@node support/deploy.js
 
 #
