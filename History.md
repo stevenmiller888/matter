@@ -1,4 +1,8 @@
 
+0.1.3 / January 3rd, 2015
+
+  * Made matter searchable by dekucomponents
+
 0.1.2 / December 14th, 2015
 
   * Added tests
