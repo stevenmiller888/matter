@@ -18,6 +18,7 @@
     "matterjs",
     "components",
     "deku",
+    "deku-component",
     "ui"
   ],
   "devDependencies": {
